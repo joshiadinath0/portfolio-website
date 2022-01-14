@@ -1,38 +1,137 @@
+body {
+  background-color: #161b26;
+  font-family: "Roboto";
+  vertical-align: top;
+}
 .App {
-  text-align: center;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Toolbar-resume > a {
+  position: absolute;
+  margin: 100 px;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 1000;
+  color: #a484e8;
+  top: 90px;
+  left: 200px;
 }
+/* .Toolbar-resume>a:hover{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+} */
+
+.Toolbar {
+  position: absolute;
+  top: 90px;
+  right: 200px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Toolbar > a {
+  cursor: pointer;
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 1000;
+  color: #a484e8;
+}
+.welcome {
+  position: absolute;
+  top: 220px;
+  left: 200px;
+  font-size: small;
+  font-weight: 1000px;
+  color: #a484e8;
+}
+.name {
+  position: absolute;
   color: white;
+  top: 240px;
+  left: 200px;
+  letter-spacing: 1px;
+  font-weight: 1px;
+  font-size: 46px;
 }
-
-.App-link {
-  color: #61dafb;
+.intro {
+  position: absolute;
+  color: white;
+  top: 350px;
+  left: 200px;
+  letter-spacing: 1px;
+  width: 500px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.icons {
+  position: absolute;
+  top: 480px;
+  left: 200px;
+  cursor: pointer;
+}
+.icons > img {
+  margin-right: 25px;
+}
+.skills {
+  position: absolute;
+  top: 550px;
+  left: 200px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #a484e8;
+}
+.skill {
+  position: absolute;
+  top: 550px;
+  left: 280px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.image > img {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  width: 800px;
+  z-index: -1;
+}
+.background {
+  position: absolute;
+  display: block;
+  right: 152px;
+  top: 210px;
+  width: 475.58px;
+  height: 400.48px;
+  background: rgba(59, 30, 121, 0.13);
+  border-radius: 63px;
+  transform: rotate(-35deg);
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: rotate(360deg);
   }
+}
+.background:hover {
+  -webkit-animation: spin 2s infinite linear;
+}
+.contact {
+  position: absolute;
+  top: 1100px;
+  height: 500px;
+  left: 560px;
+  color: #a484e8;
+}
+.about {
+  position: absolute;
+  top: 1500px;
+  left: 590px;
+  color: #a484e8;
+}
+.back {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  border-radius: 60px;
+  top: 1050px;
+  left: 550px;
+  z-index: -1;
+  background: rgba(59, 30, 121, 0.13);
 }
